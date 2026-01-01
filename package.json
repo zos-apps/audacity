@@ -1,0 +1,111 @@
+{
+  "name": "@zos-apps/audacity",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "zos": {
+    "id": "ai.hanzo.audacity",
+    "name": "Audacity",
+    "icon": "🎙️",
+    "category": "creative",
+    "description": "Audio editing and recording",
+    "permissions": [
+      "audio",
+      "microphone",
+      "filesystem"
+    ],
+    "window": {
+      "defaultSize": {
+        "width": 1100,
+        "height": 700
+      },
+      "resizable": true
+    },
+    "featured": true,
+    "tags": [
+      "audio",
+      "recording",
+      "editing",
+      "podcast"
+    ],
+    "about": "Free, open source audio editor and recorder.",
+    "help": [
+      "Import audio files",
+      "Edit waveforms",
+      "Apply effects",
+      "Export in multiple formats"
+    ],
+    "docs": "https://zos-apps.github.io/audacity",
+    "site": "https://github.com/zos-apps/audacity",
+    "features": [
+      "Multi-track editing",
+      "Audio effects",
+      "Noise reduction",
+      "Format conversion",
+      "Recording"
+    ],
+    "shortcuts": [
+      "Space Play/Stop",
+      "R Record",
+      "⌘Z Undo"
+    ],
+    "screenshots": {
+      "hero": "screenshots/hero.png",
+      "images": [
+        "screenshots/1-main.png",
+        "screenshots/2-feature.png"
+      ]
+    },
+    "downloads": {
+      "web": "https://zos-apps.github.io/audacity"
+    },
+    "releaseDate": "2024-12-31",
+    "support": "https://github.com/zos-apps/audacity/issues",
+    "changelog": "https://github.com/zos-apps/audacity/releases"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@zos-apps/config": "workspace:*",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "description": "Audio editing and recording",
+  "homepage": "https://zos-apps.github.io/audacity",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/audacity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/audacity/issues"
+  },
+  "keywords": [
+    "zos",
+    "app",
+    "audacity",
+    "audio",
+    "recording",
+    "editing",
+    "podcast"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
